@@ -1,0 +1,9 @@
+*
+!/.gitignore
+!/src/
+!/src/*.d.ts
+!/test/
+!/test/*.d.ts
+!/index.js
+!/licenses.txt
+!/package.json
