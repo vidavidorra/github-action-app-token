@@ -63,8 +63,7 @@ Refer to the [contributing guide](https://github.com/vidavidorra/.github/blob/ma
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg?style=flat-square)](https://github.com/xojs/xo)
 [![Code style](https://img.shields.io/badge/code_style-Prettier-ff69b4?logo=prettier&style=flat-square)](https://github.com/prettier/prettier)
 [![Linting](https://img.shields.io/badge/linting-ESLint-lightgrey?logo=eslint&style=flat-square)](https://eslint.org)
-[![Lint commit messages](https://img.shields.io/github/workflow/status/vidavidorra/github-action-app-token/Lint%20commit%20messages?logo=github&label=Lint%20commit%20messages&style=flat-square)](https://github.com/vidavidorra/github-action-app-token/actions)
-[![Build](https://img.shields.io/github/workflow/status/vidavidorra/github-action-app-token/Build?logo=github&label=Build&style=flat-square)](https://github.com/vidavidorra/github-action-app-token/actions)
+[![Build](https://img.shields.io/github/workflow/status/vidavidorra/github-action-app-token/Build?logo=github&style=flat-square)](https://github.com/vidavidorra/github-action-app-token/actions)
 
 ## Security policy
 

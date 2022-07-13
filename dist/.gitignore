@@ -1,9 +1,6 @@
 *
 !/.gitignore
-!/src/
-!/src/*.d.ts
-!/test/
-!/test/*.d.ts
+
 !/index.js
+!/index.js.map
 !/licenses.txt
-!/package.json

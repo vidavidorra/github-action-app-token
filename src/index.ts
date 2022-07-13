@@ -1,4 +1,4 @@
-import core from '@actions/core';
+import * as core from '@actions/core';
 import {authenticate, InstallationAuthentication} from './authenticate.js';
 import {options} from './options.js';
 

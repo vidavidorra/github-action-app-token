@@ -1,58 +1,60 @@
 [
-  {
-    "scope": "https://api.github.com:443",
-    "method": "POST",
-    "path": "/app/installations/26853572/access_tokens",
-    "body": {
-      "repositories": [".github"]
-    },
-    "status": 201,
-    "response": {
-      "token": "ghs_DHkSynTFUIMCEKfDYm6bm6XKtoSxrU4ep0Kq",
-      "expires_at": "2022-07-11T22:22:48Z",
-      "permissions": {},
-      "repository_selection": "selected"
-    },
-    "rawHeaders": [
-      "Server",
-      "GitHub.com",
-      "Date",
-      "Mon, 11 Jul 2022 21:22:48 GMT",
-      "Content-Type",
-      "application/json; charset=utf-8",
-      "Content-Length",
-      "139",
-      "Cache-Control",
-      "public, max-age=60, s-maxage=60",
-      "Vary",
-      "Accept",
-      "ETag",
-      "\"b61aa69f9b92edaa6ab351d57e5df1fa7993ff45e9b5fe1f0f252bbf8584c649\"",
-      "X-GitHub-Media-Type",
-      "github.v3; param=machine-man-preview; format=json",
-      "Access-Control-Expose-Headers",
-      "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset",
-      "Access-Control-Allow-Origin",
-      "*",
-      "Strict-Transport-Security",
-      "max-age=31536000; includeSubdomains; preload",
-      "X-Frame-Options",
-      "deny",
-      "X-Content-Type-Options",
-      "nosniff",
-      "X-XSS-Protection",
-      "0",
-      "Referrer-Policy",
-      "origin-when-cross-origin, strict-origin-when-cross-origin",
-      "Content-Security-Policy",
-      "default-src 'none'",
-      "Vary",
-      "Accept-Encoding, Accept, X-Requested-With",
-      "X-GitHub-Request-Id",
-      "E7A0:0DEA:F0F978:F6262A:62CC94A8",
-      "connection",
-      "close"
-    ],
-    "responseIsBinary": false
-  }
+    {
+        "scope": "https://api.github.com:443",
+        "method": "POST",
+        "path": "/app/installations/26853572/access_tokens",
+        "body": {
+            "repositories": [
+                ".github"
+            ]
+        },
+        "status": 201,
+        "response": {
+            "token": "ghs_WdHJgcUxVBIojlEJOr9pSOUXWQklwp2bitOH",
+            "expires_at": "2022-07-12T21:05:44Z",
+            "permissions": {},
+            "repository_selection": "selected"
+        },
+        "rawHeaders": [
+            "Server",
+            "GitHub.com",
+            "Date",
+            "Tue, 12 Jul 2022 20:05:44 GMT",
+            "Content-Type",
+            "application/json; charset=utf-8",
+            "Content-Length",
+            "139",
+            "Cache-Control",
+            "public, max-age=60, s-maxage=60",
+            "Vary",
+            "Accept",
+            "ETag",
+            "\"5ed9314b82e7d0f6a2560fb90917340ba2dc548cff92e694f9d5dbb35c4e85fd\"",
+            "X-GitHub-Media-Type",
+            "github.v3; param=machine-man-preview; format=json",
+            "Access-Control-Expose-Headers",
+            "ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Strict-Transport-Security",
+            "max-age=31536000; includeSubdomains; preload",
+            "X-Frame-Options",
+            "deny",
+            "X-Content-Type-Options",
+            "nosniff",
+            "X-XSS-Protection",
+            "0",
+            "Referrer-Policy",
+            "origin-when-cross-origin, strict-origin-when-cross-origin",
+            "Content-Security-Policy",
+            "default-src 'none'",
+            "Vary",
+            "Accept-Encoding, Accept, X-Requested-With",
+            "X-GitHub-Request-Id",
+            "FCAD:0DE9:1917383:19E2FA1:62CDD418",
+            "connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
 ]
