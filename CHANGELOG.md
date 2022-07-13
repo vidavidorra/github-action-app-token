@@ -1,3 +1,11 @@
+### [1.0.1](https://github.com/vidavidorra/github-action-app-token/compare/v1.0.0...v1.0.1) (2022-07-13)
+
+### Bug Fixes
+
+- build bundle with esbuild ([be21204](https://github.com/vidavidorra/github-action-app-token/commit/be21204319259d383dbdc9a56fca4a34aa5bc056))
+- compile with `--no-transpilation` flag to prevent import undefined error in `ncc` ([807eb28](https://github.com/vidavidorra/github-action-app-token/commit/807eb285c24961f3aee40020262e3af8ab06b139))
+- format tests ([73c4dd1](https://github.com/vidavidorra/github-action-app-token/commit/73c4dd127f1e96b960d616a56cf788da25315652))
+
 ## 1.0.0 (2022-07-11)
 
 ### Features
