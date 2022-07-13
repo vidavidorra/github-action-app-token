@@ -14,6 +14,8 @@ async function run(
       installationId: core.getInput('installationId'),
     };
 
+    console.log(inputs);
+
     const parsedOptions = options.parse(inputs);
     const installationAuth = await auth(parsedOptions);
 
