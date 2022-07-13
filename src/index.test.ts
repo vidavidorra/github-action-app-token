@@ -14,7 +14,7 @@ const test = anyTest as TestFn<{
 const installationAuthentication: InstallationAuthentication = {
   token: 'ghs_gaCxrLk7CwZQ70nDBvPLQemUXd1R6O25qUMB',
   createdAt: '2022-06-01T12:00:00Z',
-  expiresAt: '2022-06-28T13:00:00Z',
+  expiresAt: '2022-06-01T13:00:00Z',
 } as const;
 
 const fakeInputs: Record<string, string> = {
@@ -42,7 +42,7 @@ test.afterEach((t) => {
   t.context.setOutput.restore();
 });
 
-test.serial('dummy', async (t) => {
+test.serial('calls the "authenticate" function', async (t) => {
   const authenticate = fake.resolves(installationAuthentication);
   const auth = await run(authenticate);
   t.true(auth.token !== undefined);

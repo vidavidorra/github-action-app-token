@@ -1,6 +1,6 @@
 import test from 'ava';
 import nock from 'nock';
-import {RequestError} from '@octokit/request-error';
+// Import {RequestError} from '@octokit/request-error';
 import config from '../test/config.js';
 import {authenticate} from './authenticate.js';
 
@@ -105,7 +105,7 @@ test.serial('throws an error if "appId" is invalid', async (t) => {
       repositories: new Set([config.repository]),
     }),
     {
-      instanceOf: RequestError,
+      // InstanceOf: RequestError,
       message: 'Integration not found',
     },
   );
@@ -131,7 +131,7 @@ test.serial('throws an error if "privateKey" is invalid', async (t) => {
       repositories: new Set([config.repository]),
     }),
     {
-      instanceOf: RequestError,
+      // InstanceOf: re.RequestError,
       message: 'A JSON web token could not be decoded',
     },
   );
@@ -148,7 +148,7 @@ test.serial('throws an error if "installationId" is invalid', async (t) => {
       installationId: 1,
     }),
     {
-      instanceOf: RequestError,
+      // InstanceOf: re.RequestError,
       message: 'Not Found',
     },
   );

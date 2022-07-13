@@ -18,7 +18,7 @@
     "xo": "xo",
     "build": "tsc",
     "build:check": "tsc --noEmit",
-    "build-action": "ncc build --transpile-only --source-map --license licenses.txt src/action.ts",
+    "build-action": "esbuild src/action.ts --bundle --platform=node --format=esm --outfile=dist/index.js --banner:js=\"import { createRequire } from 'module';const require = createRequire(import.meta.url);\"",
     "test": "c8 ava"
   },
   "repository": {
@@ -59,6 +59,7 @@
     "ava": "4.3.1",
     "c8": "7.11.2",
     "dotenv": "16.0.1",
+    "esbuild": "0.14.49",
     "husky": "7.0.4",
     "lint-staged": "12.3.8",
     "nock": "13.2.4",
