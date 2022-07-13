@@ -1,3 +1,9 @@
+### [1.0.2](https://github.com/vidavidorra/github-action-app-token/compare/v1.0.1...v1.0.2) (2022-07-13)
+
+### Bug Fixes
+
+- log inputs ([4f7850f](https://github.com/vidavidorra/github-action-app-token/commit/4f7850fb92ff6fa2a5632d1865975710845549ab))
+
 ### [1.0.1](https://github.com/vidavidorra/github-action-app-token/compare/v1.0.0...v1.0.1) (2022-07-13)
 
 ### Bug Fixes
