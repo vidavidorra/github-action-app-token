@@ -1,3 +1,10 @@
+### [1.0.4](https://github.com/vidavidorra/github-action-app-token/compare/v1.0.3...v1.0.4) (2022-07-14)
+
+### Bug Fixes
+
+- change empty string input to `undefined` ([a3df69c](https://github.com/vidavidorra/github-action-app-token/commit/a3df69cad2bcb9c209d2103371b4660c86fd3f0e))
+- format tests again ([7a92f46](https://github.com/vidavidorra/github-action-app-token/commit/7a92f467144f658b532717e5cca20da4755c55d8))
+
 ### [1.0.3](https://github.com/vidavidorra/github-action-app-token/compare/v1.0.2...v1.0.3) (2022-07-14)
 
 ### Bug Fixes
