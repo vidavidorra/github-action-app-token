@@ -18252,7 +18252,7 @@ var options = mod.object({
   }),
   repositories: mod.preprocess((arg) => Array.isArray(arg) ? new Set(arg) : arg, mod.set(mod.string().regex(/^[\w.-]+$/)).min(1)),
   owner: mod.string().min(1).optional(),
-  installationId: mod.preprocess(stringArgToNumber, mod.number().int().positive()).optional()
+  installationId: mod.preprocess(stringArgToNumber, mod.number().int().positive().optional()).optional()
 });
 
 // src/index.ts

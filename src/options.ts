@@ -44,7 +44,7 @@ const options = z.object({
   ),
   owner: z.string().min(1).optional(),
   installationId: z
-    .preprocess(stringArgToNumber, z.number().int().positive())
+    .preprocess(stringArgToNumber, z.number().int().positive().optional())
     .optional(),
 });
 
