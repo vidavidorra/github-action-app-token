@@ -18226,7 +18226,11 @@ var mod = /* @__PURE__ */ Object.freeze({
 var rsaPrivateKeyStart = "-----BEGIN RSA PRIVATE KEY-----";
 var rsaPrivateKeyEnd = "-----END RSA PRIVATE KEY-----";
 function stringArgToNumber(arg) {
-  return typeof arg === "string" && /^[ \t]*[1-9]\d*[ \t]*$/.test(arg) ? Number.parseInt(arg, 10) : arg;
+  const isString = typeof arg === "string";
+  if (isString && /^[ \t]*[1-9]\d*[ \t]*$/.test(arg)) {
+    return Number.parseInt(arg, 10);
+  }
+  return isString && arg.length === 0 ? void 0 : arg;
 }
 var options = mod.object({
   appId: mod.preprocess(stringArgToNumber, mod.number().int().positive()),
