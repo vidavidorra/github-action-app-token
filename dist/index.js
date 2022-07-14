@@ -18261,6 +18261,7 @@ async function run(auth) {
       owner: import_core.default.getInput("owner"),
       installationId: import_core.default.getInput("installationId")
     };
+    console.log(inputs);
     const parsedOptions = options.parse(inputs);
     const installationAuth = await auth(parsedOptions);
     import_core.default.setOutput("token", installationAuth.token);
