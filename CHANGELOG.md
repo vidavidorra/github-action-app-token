@@ -1,3 +1,9 @@
+### [1.0.5](https://github.com/vidavidorra/github-action-app-token/compare/v1.0.4...v1.0.5) (2022-07-14)
+
+### Bug Fixes
+
+- make inner ID optional ([6901602](https://github.com/vidavidorra/github-action-app-token/commit/69016021ec0bc0e5c29ab5fc514dd07ba57512ad))
+
 ### [1.0.4](https://github.com/vidavidorra/github-action-app-token/compare/v1.0.3...v1.0.4) (2022-07-14)
 
 ### Bug Fixes
