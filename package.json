@@ -18,7 +18,7 @@
     "xo": "xo",
     "build": "tsc",
     "build:check": "tsc --noEmit",
-    "bundle-github-action": "npx tsup ./bin/github-action.ts --target ES2022 --format esm --sourcemap",
+    "bundle-github-action": "esbuild bin/github-action.ts --bundle --platform=node --sourcemap --format=esm --outfile=dist/github-action.js --banner:js=\"import { createRequire } from 'module';const require = createRequire(import.meta.url);\"",
     "test": "c8 ava"
   },
   "repository": {
@@ -60,6 +60,7 @@
     "ava": "4.3.1",
     "c8": "7.11.2",
     "dotenv": "16.0.1",
+    "esbuild": "0.14.49",
     "husky": "7.0.4",
     "lint-staged": "12.3.8",
     "nock": "13.2.4",
@@ -67,7 +68,6 @@
     "prettier": "2.6.2",
     "semantic-release": "19.0.2",
     "sinon": "14.0.0",
-    "tsup": "6.1.3",
     "typescript": "4.7.4",
     "xo": "0.48.0"
   },
