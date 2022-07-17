@@ -1,3 +1,9 @@
+### [1.2.2](https://github.com/vidavidorra/github-action-app-token/compare/v1.2.1...v1.2.2) (2022-07-17)
+
+### Build System
+
+- package action with esbuild again ([fefe8bf](https://github.com/vidavidorra/github-action-app-token/commit/fefe8bfc911020cf9c25a94fe0f89c7071935361))
+
 ### [1.2.1](https://github.com/vidavidorra/github-action-app-token/compare/v1.2.0...v1.2.1) (2022-07-17)
 
 ### Bug Fixes
