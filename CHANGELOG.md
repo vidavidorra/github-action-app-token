@@ -1,3 +1,9 @@
+### [1.2.1](https://github.com/vidavidorra/github-action-app-token/compare/v1.2.0...v1.2.1) (2022-07-17)
+
+### Bug Fixes
+
+- add build output ([60f6876](https://github.com/vidavidorra/github-action-app-token/commit/60f687691465ce63d787e67b2e763e759955bfda))
+
 ## [1.2.0](https://github.com/vidavidorra/github-action-app-token/compare/v1.1.0...v1.2.0) (2022-07-17)
 
 ### Features
