@@ -1,3 +1,9 @@
+## [1.1.0](https://github.com/vidavidorra/github-action-app-token/compare/v1.0.5...v1.1.0) (2022-07-17)
+
+### Features
+
+- add npm module as well ([82fc72b](https://github.com/vidavidorra/github-action-app-token/commit/82fc72b9d971a39dbb312c61c7910ce5823d5b4b))
+
 ### [1.0.5](https://github.com/vidavidorra/github-action-app-token/compare/v1.0.4...v1.0.5) (2022-07-14)
 
 ### Bug Fixes
