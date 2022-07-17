@@ -15464,9 +15464,6 @@ async function authenticate(options2) {
   };
 }
 
-// src/index.ts
-var import_core = __toESM(require_core(), 1);
-
 // node_modules/zod/lib/index.mjs
 var util;
 (function(util2) {
@@ -18255,7 +18252,8 @@ var options = mod.object({
   installationId: mod.preprocess(stringArgToNumber, mod.number().int().positive().optional()).optional()
 });
 
-// src/index.ts
+// src/action.ts
+var import_core = __toESM(require_core(), 1);
 async function run(auth) {
   try {
     const inputs = {
@@ -18265,7 +18263,6 @@ async function run(auth) {
       owner: import_core.default.getInput("owner"),
       installationId: import_core.default.getInput("installationId")
     };
-    console.log(inputs);
     const parsedOptions = options.parse(inputs);
     const installationAuth = await auth(parsedOptions);
     import_core.default.setOutput("token", installationAuth.token);
@@ -18278,7 +18275,7 @@ async function run(auth) {
   }
 }
 
-// src/action.ts
+// bin/action.ts
 await run(authenticate);
 /*!
  * is-plain-object <https://github.com/jonschlinkert/is-plain-object>

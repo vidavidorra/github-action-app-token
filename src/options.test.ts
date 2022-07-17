@@ -148,6 +148,7 @@ test(failsParsing, setup().appId(-1), 'negative');
 test(failsParsing, setup().appId('-1'), 'negative');
 test(failsParsing, setup().appId('abc'), 'non-numeric');
 test(failsParsing, setup().appId(undefined), 'undefined');
+test(failsParsing, setup().appId(''), 'empty string');
 
 test(succeedsParsing, setup().set('privateKey', false), 'normal RSA');
 test(failsParsing, setup().set('privateKey', undefined), 'undefined');
@@ -182,6 +183,7 @@ test(succeedsParsing, setup().owner('amoore'), 'normal');
 test(failsParsing, setup().owner(''), 'empty');
 
 test(succeedsParsing, setup().installationId(undefined), 'undefined');
+test(succeedsParsing, setup().installationId(''), 'empty string');
 test(succeedsParsing, setup().installationId(1), 'positive');
 test(succeedsParsing, setup().installationId('1'), 'positive');
 test(succeedsParsing, setup().installationId(' 1'), 'space prefix positive');

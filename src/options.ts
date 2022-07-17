@@ -3,6 +3,14 @@ import {z} from 'zod';
 const rsaPrivateKeyStart = '-----BEGIN RSA PRIVATE KEY-----';
 const rsaPrivateKeyEnd = '-----END RSA PRIVATE KEY-----';
 
+/**
+ * Convert a string argument to a number if there is a valid conversion.
+ *
+ * 1. Remove trailing and leading whitespace.
+ * 2. Convert integer string to a `number`.
+ * 3. Convert empty string to `undefined`.
+ * 4. Return raw argument if no conversion could be made.
+ */
 function stringArgToNumber(arg: unknown): number | unknown {
   const isString = typeof arg === 'string';
   if (isString && /^[ \t]*[1-9]\d*[ \t]*$/.test(arg)) {

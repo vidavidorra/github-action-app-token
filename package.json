@@ -4,10 +4,10 @@
   "description": "GitHub Action to authenticate as a GitHub App",
   "private": true,
   "type": "module",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "files": [
-    "dist/**/!(*.test).{js,d.ts}"
+    "dist/src/**/!(*.test).{js,d.ts}"
   ],
   "scripts": {
     "prepare": "husky install .github/husky",
@@ -18,7 +18,7 @@
     "xo": "xo",
     "build": "tsc",
     "build:check": "tsc --noEmit",
-    "build-action": "esbuild src/action.ts --bundle --platform=node --format=esm --outfile=dist/index.js --banner:js=\"import { createRequire } from 'module';const require = createRequire(import.meta.url);\"",
+    "package-action": "esbuild bin/action.ts --bundle --platform=node --format=esm --outfile=dist/action.js --banner:js=\"import { createRequire } from 'module';const require = createRequire(import.meta.url);\"",
     "test": "c8 ava"
   },
   "repository": {
