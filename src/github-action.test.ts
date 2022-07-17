@@ -3,7 +3,7 @@ import core from '@actions/core';
 import anyTest, {TestFn} from 'ava';
 import config from '../test/config.js';
 import {InstallationAuthentication} from './authenticate.js';
-import {run} from './action.js';
+import {run} from './github-action.js';
 
 const test = anyTest as TestFn<{
   getInput: SinonStub;

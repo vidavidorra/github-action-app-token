@@ -4,10 +4,10 @@
   "description": "GitHub Action to authenticate as a GitHub App",
   "private": true,
   "type": "module",
-  "main": "dist/src/index.js",
-  "types": "dist/src/index.d.ts",
+  "exports": "./dist/index.js",
+  "types": "./dist/src/index.d.ts",
   "files": [
-    "dist/src/**/!(*.test).{js,d.ts}"
+    "./dist/**/!(*.test).{js,d.ts,map}"
   ],
   "scripts": {
     "prepare": "husky install .github/husky",
@@ -18,7 +18,7 @@
     "xo": "xo",
     "build": "tsc",
     "build:check": "tsc --noEmit",
-    "package-action": "esbuild bin/action.ts --bundle --platform=node --format=esm --outfile=dist/action.js --banner:js=\"import { createRequire } from 'module';const require = createRequire(import.meta.url);\"",
+    "bundle-github-action": "npx tsup ./bin/github-action.ts --target ES2022 --format esm --sourcemap",
     "test": "c8 ava"
   },
   "repository": {
@@ -27,9 +27,10 @@
   },
   "keywords": [
     "github",
-    "action",
     "app",
-    "token"
+    "token",
+    "action",
+    "authenticate"
   ],
   "author": "Jeroen de Bruijn",
   "license": "GPL-3.0-or-later",
@@ -59,7 +60,6 @@
     "ava": "4.3.1",
     "c8": "7.11.2",
     "dotenv": "16.0.1",
-    "esbuild": "0.14.49",
     "husky": "7.0.4",
     "lint-staged": "12.3.8",
     "nock": "13.2.4",
@@ -67,6 +67,7 @@
     "prettier": "2.6.2",
     "semantic-release": "19.0.2",
     "sinon": "14.0.0",
+    "tsup": "6.1.3",
     "typescript": "4.7.4",
     "xo": "0.48.0"
   },
