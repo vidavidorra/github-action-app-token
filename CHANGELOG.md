@@ -1,3 +1,9 @@
+## [1.2.0](https://github.com/vidavidorra/github-action-app-token/compare/v1.1.0...v1.2.0) (2022-07-17)
+
+### Features
+
+- export action and build ESM only ([7667b21](https://github.com/vidavidorra/github-action-app-token/commit/7667b21b704c72010b37e4054ba4af32e8a96e82))
+
 ## [1.1.0](https://github.com/vidavidorra/github-action-app-token/compare/v1.0.5...v1.1.0) (2022-07-17)
 
 ### Features
